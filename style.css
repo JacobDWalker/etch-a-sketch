@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid-container {
+    display: flex;
+    flex-flow: row wrap;
+    outline: auto;
+    height: 900px;
+    width: 900px;
+}
+
+#grid-container > div {
+    outline: auto;
+}
+
+#grid-container > div:active {
+    background-color: black;
+/*TODO: Make box change color permanently on click. Make dragging click between boxes fluid    */
+}
