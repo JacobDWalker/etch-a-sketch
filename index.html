@@ -11,7 +11,24 @@
 <body>
 <!--TODO: Make UI. Default grid size. Allow user to change grid size. Change color.-->
 
-<div id="grid-container"></div>
+<div id="title">Etch a Sketch</div>
+
+<div id="body-container">
+    <div id="grid-control-container">
+        <button id="clear-grid">Clear Grid</button>
+        <label for="color-select"></label><select id="color-select">
+            <option value="black">Black</option>
+            <option value="rainbow">Rainbow</option>
+            <option value="eraser">Eraser</option>
+        </select>
+        <p id="slider-value-display"></p>
+        <label for="slider"></label><input type="range" min="1" max="100" id="slider">
+    </div>
+
+    <div id="grid-container"></div>
+</div>
+
+<footer><a href="https://github.com/JacobDWalker">Github Link</a></footer>
 
 </body>
 </html>

@@ -1,22 +1,75 @@
 body {
     display: flex;
+    flex-direction: column;
+    background-color: #70877F;
+    color: #AFF9C9;
+    font-family: Robot, serif;
+}
+
+#title {
+    display: flex;
     justify-content: center;
-    align-items: center;
+    font-weight: bolder;
+    font-size: 120px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, select{
+    color: inherit;
+    background-color: inherit;
+    border-color: #222E50;
+    display: flex;
+    justify-content: flex-start;
+}
+
+option {
+    background: #70877F;
+}
+
+#slider {
+    accent-color: #AFF9C9;
+}
+
+
+#body-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    padding: 8px;
 }
 
 #grid-container {
+    background-color: white;
+    color: white;
     display: flex;
     flex-flow: row wrap;
     outline: auto;
     height: 900px;
     width: 900px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
-#grid-container > div {
-    outline: auto;
+
+#grid-control-container {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
 }
 
-#grid-container > div:active {
-    background-color: black;
+#grid-container > div:hover {
+    background-color: gray;
 /*TODO: Make box change color permanently on click. Make dragging click between boxes fluid    */
+}
+
+footer {
+    display: flex;
+    flex: auto;
+    justify-content: center;
 }
